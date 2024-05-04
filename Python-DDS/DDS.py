@@ -109,8 +109,9 @@ def runDDS():
         mutation_independent_proba=0.05, #mutation
         tournament_size=3,
         n_gen_no_change=5,
-        caching=True,
-        n_jobs=-1)
+        caching=True
+        #n_jobs=-1
+        )
     selector = selector.fit(X_train, y_train)
     text.insert(END,"DDS Prediction Results\n") 
     prediction_data = prediction(X_test, selector) 
